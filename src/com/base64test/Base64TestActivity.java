@@ -30,16 +30,7 @@ public class Base64TestActivity extends Activity {
     	bmp = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);
     	
     	ByteArrayOutputStream output = new ByteArrayOutputStream();
-    	bmp.compress(Bitmap.CompressFormat.JPEG, 100, output);
-        String base64String = Base64.encodeToString(output.toByteArray(), Base64.DEFAULT);
-    	
-        Log.i("Img", base64String);
-        
-        byte[] imageBytes = base64String.getBytes();
-        byte[] imageAsBytes = Base64.decode(imageBytes, 0);
-        image2.setImageBitmap(
-                BitmapFactory.decodeByteArray(imageAsBytes, 0, imageAsBytes.length)
-        );
+    	bmp.compress(Bitmap.CompressFormat.JPEG, 40, output);
 
         
     }
