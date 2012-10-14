@@ -32,6 +32,6 @@ public class Base64TestActivity extends Activity {
     	ByteArrayOutputStream output = new ByteArrayOutputStream();
     	bmp.compress(Bitmap.CompressFormat.JPEG, 40, output);
 
-        
+        //issue2 fixed
     }
 }
