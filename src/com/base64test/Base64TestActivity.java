@@ -6,7 +6,6 @@ import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.util.Base64;
 import android.util.Log;
 import android.widget.ImageView;
 
@@ -33,5 +32,6 @@ public class Base64TestActivity extends Activity {
     	bmp.compress(Bitmap.CompressFormat.JPEG, 40, output);
 
         //issue2 fixed
+        Log.i("file", "++++file");
     }
 }
